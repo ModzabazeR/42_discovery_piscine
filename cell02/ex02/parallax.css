@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#box1 {
+    background-image: url("https://64.media.tumblr.com/54775a4f3286321a352c475d6620d924/tumblr_mh8y02idXV1rmw09ko1_1280.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#box2 {
+    color: white;
+    background-color: #000;
+}
+
+#box3 {
+    color: white;
+    background-image: url("https://www.gifcen.com/wp-content/uploads/2022/03/rickroll-gif.gif");
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 30px #666666;
+}
+
+td {
+    padding: 0px;
+}
+
+.bio {
+    color: gray;
+    font-style: italic;
+    margin: 14px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+}
+
+.social img {
+    width: 40px;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: #333;
+}

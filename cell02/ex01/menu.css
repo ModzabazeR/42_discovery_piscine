@@ -1,0 +1,17 @@
+body {
+    background-color: #eec07b;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+select {
+    background-color: #ffd60b;
+    font-size: 24px;
+    padding: 16px 32px;
+    border-radius: 4px;
+}

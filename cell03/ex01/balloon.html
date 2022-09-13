@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        #balloon {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="balloon" onclick="clickHandler()" onmouseleave="leaveHandler()"></div>
+
+    <script>
+        const balloon = document.getElementById("balloon");
+        balloon.style.width = "200px";
+        balloon.style.height = "200px";
+        balloon.style.backgroundColor = "red";
+
+        const colors = ["red", "green", "blue"];
+        let curSize = parseInt(balloon.style.width.replace("px", ""));
+
+        const clickHandler = () => {
+
+            if (curSize > 420) {
+                curSize = 200;
+            } else {
+                curSize += 10;
+            }
+
+            balloon.style.width = `${curSize}px`;
+            balloon.style.height = `${curSize}px`;
+            balloon.style.backgroundColor = colors[(colors.findIndex((e) => e == balloon.style.backgroundColor) + 1) % 3];
+        }
+
+        const leaveHandler = () => {
+            if (curSize > 200) {
+                curSize -= 5;
+            }
+
+            balloon.style.width = `${curSize}px`;
+            balloon.style.height = `${curSize}px`;
+            balloon.style.backgroundColor = colors[(3 + (colors.findIndex((e) => e == balloon.style.backgroundColor) - 1)) % 3];
+        }
+    </script>
+</body>
+</html>
